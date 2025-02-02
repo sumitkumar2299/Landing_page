@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import logo from "./Image/logo.png";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 import { useState } from "react";
 
 
@@ -28,6 +30,15 @@ function Navbar() {
     };
 
   },[])
+
+
+  function HandleMenu(){
+    console.log("handling menu");
+  }
+
+
+
+
   return (
     <>
 
@@ -77,6 +88,11 @@ function Navbar() {
         <option className="bg-[#123456] cursor-pointer py-3 px-3">EN</option>
         <option className="bg-[#123456] cursor-pointer ">ES</option>
       </select>
+
+{/* 
+      <button onClick={HandleMenu} className="text-white p-3 cursor-pointer rounded-full md:hidden">
+      <FontAwesomeIcon icon={faBars} className="text-2xl" />
+    </button> */}
      
 
      
