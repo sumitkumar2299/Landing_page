@@ -43,7 +43,7 @@ function Navbar() {
     <>
 
     <div  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          scroll ? "bg-[#571f12]" : "bg-transparent"
+          scroll ? "bg-[#1000001]" : "bg-transparent"
         }`}>
 
 
